@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header 
+        {
+            background-color: #f1f1f1;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .nav{
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .nav a {
+            padding: 15px 17px;
+            float: left;
+            text-decoration: none;
+            color: white;
+
+        }
+        .nav a:hover
+        {
+            background-color: grey;
+        }
+
+        .column{
+            float: left;
+
+            padding: 15px;
+        }
+        .column.side{
+            width: 25%;
+        }
+        .column.middle{
+            width: 50%;
+        }
+
+        .row::after
+        {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 15px 12px;
+            text-align: center;
+        }
+
+        @media screen and (max-width:600px) {
+            .column.side{
+            width: 100%;
+        }
+
+        .column.middle{
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        </p>
+    </div>
+
+    <div class="nav">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+    <div class="row">
+        <div class="column side">
+            <h2>Side</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, officiis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, officiis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, officiis.
+            </p>
+        </div>
+
+        <div class="column middle">
+            <H2>Main Content</H2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam laudantium, quaerat cum tempore totam dolor quia odio, est omnis vel rem, ipsam pariatur eaque sunt explicabo consequatur nemo reprehenderit magni facere porro sed voluptates accusantium iure placeat. Inventore consectetur laboriosam at necessitatibus sed ducimus mollitia omnis sit reiciendis. Et, provident?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam laudantium, quaerat cum tempore totam dolor quia odio, est omnis vel rem, ipsam pariatur eaque sunt explicabo consequatur nemo reprehenderit magni facere porro sed voluptates accusantium iure placeat. Inventore consectetur laboriosam at necessitatibus sed ducimus mollitia omnis sit reiciendis. Et, provident?</p>
+        </div>
+
+        <div class="column side">
+            <h2>Side</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, officiis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, officiis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, officiis.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>
